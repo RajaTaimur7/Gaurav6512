@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form Template</title>
+
+        <!-- Bootstrap CSS 4.5.2 -->
+        
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+        
+        <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        />
+
+        <style>
+            label{
+                color:blue;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <section>
+            <div class="container text-center">
+                <h1>Form in Bootstrap</h1>
+            </div>
+        </section>
+
+        <!-- Normal Input Fields -->
+        <section>
+            <div class="container my-4">
+                <div class="card">
+                    
+                    <div class="card-header">
+                        <h2>User Registration</h2>
+                    </div>
+
+                    <div class="card-body">
+                        <form action="" method="post" name="form1" id="form2" enctype="multipart/form-data">
+                            
+                            <div class="form-group">
+                                <label for="TxtSlno">Slno</label>
+                                <input type="text" class="form-control" name="TxtSlno1" id="TxtSlno2" readonly aria-describedby="TxtSlnoHelp"/>
+                                <!-- <input
+                                    type="text"
+                                    class="form-control"
+                                    name="TxtSlno1"
+                                    id="TxtSlno2"
+                                    aria-describedby="TxtSlnoHelp"
+                                /> -->
+                                <small id="TxtSlnoHelp" class="form-text text-muted">Automatic display Read only Slno </small>
+                            </div>                            
+                            
+                            <div class="form-group">
+                                <label for="TxtUName">User Name</label>
+                                <input type="text" class="form-control" name="TxtUName1" id="TxtUName2" aria-describedby="TxtNameHelp"/>
+                                <small id="TxtNameHelp" class="form-text text-muted">Enter Your Correct User Name</small>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="TxtPass">Password</label>
+                                <input type="password" class="form-control" name="TxtPass1" id="TxtPass2" aria-describedby="TxtPassHelp"/>
+                                <small id="TxtPassHelp" class="form-text text-muted">Enter Your Correct Password</small>
+                            </div> 
+
+                            <div class="form-group">
+                                <label for="TxtArAddr">Address</label>
+                                <textarea class="form-control" name="TxtArAddr1" id="TxtArAddr2" rows="3" aria-describedby="TxtArAddrHelp" Placeholder="Enter Your Complete Postal Address"></textarea>
+                                <small id="TxtArAddrHelp" class="form-text text-muted">Enter Your Complete Postal Address</small>
+                            </div>
+
+                            <div>Gender</div>
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioGender" id="RdbGenMale" value="Male">
+                                    <label class="form-check-label" for="inlineRadio1">Male</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioGender" id="RdbGenFemale" value="Female">
+                                    <label class="form-check-label" for="inlineRadio2">Female</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioGender" id="RdbGenOther" value="Other">
+                                    <label class="form-check-label" for="inlineRadio3">Other</label>
+                                </div> 
+                             
+
+                            <div>Education</div>
+
+                                <div class="form-check form-check-inline">
+                                    <input type="checkbox" class="form-check-input" id="inlineCheckbox1" value="Non-Matric"/>
+                                    <label class="form-check-label" for="inlineCheckbox1">Non-Matric</label>
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                    <input type="checkbox" class="form-check-input" id="inlineCheckbox2" value="Matric"/>
+                                    <label class="form-check-label" for="inlineCheckbox2">Matric</label>
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                    <input type="checkbox" class="form-check-input" id="inlineCheckbox3" value="Intermediate"/>
+                                    <label class="form-check-label" for="inlineCheckbox3">Intermediate</label>
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                    <input type="checkbox" class="form-check-input" id="inlineCheckbox3" value="Graduate"/>
+                                    <label class="form-check-label" for="inlineCheckbox3">Graduate</label>
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                    <input type="checkbox" class="form-check-input" id="inlineCheckbox3" value="Post-Graduate"/>
+                                    <label class="form-check-label" for="inlineCheckbox3">Post-Graduate</label>
+                                </div>                            
+                                         
+
+                            <div class="form-group">
+                                <label for="DtpDob">DOB</label>
+                                <input type="date" class="form-control" name="DtpDob1" id="DtpDob2" aria-describedby="TxtEmailHelp"/>
+                                <small id="DtpDobHelp" class="form-text text-muted">Feed Your DOB</small>
+                            </div>                            
+                            
+                            <div class="form-group">
+                                <label for="TxtEmail">Email</label>
+                                <input type="email" class="form-control" name="TxtEmail1" id="TxtEmail2" aria-describedby="TxtEmailHelp"/>
+                                <small id="TxtEmailHelp" class="form-text text-muted">Enter Your Email</small>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="TxtMobno">Mobile No.</label>
+                                <input type="number" class="form-control" name="TxtMobno1" id="TxtMobno2" aria-describedby="TxtMobnoHelp"/>
+                                <small id="TxtMobnoHelp" class="form-text text-muted">Enter Your Mobile No.</small>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="CmbSecQues">Security Questions</label>
+                                <select class="form-control" name="CmbSecQues1" id="CmbSecQues2"><!-- Default size -->
+                                
+                                <!-- <select class="form-control form-control-lg" name="CmbSecQues1" id="CmbSecQues2"> -->
+                                <!-- <select class="form-control form-control-sm" name="CmbSecQues1" id="CmbSecQues2"> -->
+
+                                    <option value="">Select One</option>
+                                    <option value="What is Your Favourite Game?">What is Your Favourite Game?</option>
+                                    <option value="What is Your Favourite Book?">What is Your Favourite Book?</option>
+                                    <option value="What is Your Favourite Teacher?">What is Your Favourite Teacher?</option>
+                                    <option value="What is Your Favourite Player?">What is Your Favourite Player?</option>
+                                    <option value="What is Your Favourite Hero/Heroine?">What is Your Favourite Hero/Heroine?</option>
+                                </select>
+                            </div>                            
+
+                            <div class="form-group">
+                                <label for="PcbUploadImage">Upload Image</label>
+                                <input type="file" class="form-control-file" Name="PcbUploadImage1" id="PcbUploadImage2"/>
+                            </div>
+
+                            <div class="form-group">
+
+                                <button type="submit" class="btn btn-success">Save</button>                                
+                                <input type="reset" class="btn btn-info" value="Reset"/>
+                                <button type="submit" class="btn btn-warning">Update</button>
+                                <button type="submit" class="btn btn-danger">Delete</button>
+                                <button type="submit" class="btn btn-dark">Search</button>
+                                <button type="button" class="btn btn-secondary">Exit</button>
+                                
+                            </div>                           
+
+                        </form>
+                    </div>
+
+                    <div class="card-footer text-center">
+                        Copyright 2020
+                    </div>
+
+                </div>
+            </div>
+        </section>
+            
+        <!-- Bootstrap JS, Popper.js, and jQuery -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+
+    </body>
+</html>
